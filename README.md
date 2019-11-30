@@ -4,7 +4,7 @@ A command line tool to copy corresponding DLLs of listed lib files into an insta
 The typical use case of this tool is to copy Boost DLLs next to newly built apps.  For example:
 
 ```Bash
-  > Copy-Installation-DLLs C:/Projects/my-new-app C:/boost_MSVC_2019_x64/lib/boost_system-vc142-mt-x64-1_71.lib
+  > Copy-Installation-DLLs C:/Projects/my-new-app/build C:/boost_MSVC_2019_x64/lib/boost_system-vc142-mt-x64-1_71.lib
 ```
 
 will copy 
@@ -13,4 +13,4 @@ will copy
 
 into 
 
-> C:/Projects/my-new-app
+> C:/Projects/my-new-app/build
