@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.15)
+project(Copy-Install-DLLs VERSION 0.1.0)
+
+add_executable(${PROJECT_NAME} main.cpp)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 17)
+
+target_compile_definitions(
+  ${PROJECT_NAME}
+  PRIVATE
+  UNICODE
+  _UNICODE
+  _CONSOLE
+  WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP
+  _WIN32_WINNT=_WIN32_WINNT_WIN10
+  VC_EXTRALEAN
+  WIN32_LEAN_AND_MEAN
+  WIN32
+  WIN64
+  _WIN64)
