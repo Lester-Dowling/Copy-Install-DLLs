@@ -1,4 +1,4 @@
-# Copy-Installation-DLLs
+# Copy-Install-DLLs
 A command line tool to copy corresponding DLLs of listed lib files into an installation folder.
 
 The typical use case of this tool is to copy Boost DLLs next to newly built apps.  For example:
